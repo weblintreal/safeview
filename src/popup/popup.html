@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SafeView</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <h3><img src="./../images/logo.png" id="logo" alt="Logo">Options</h3>
+    <p>Select the image categories to be blurred:</p>
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" id="adult" name="adult">
+          Adult content
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="women" name="women">
+          Women-related content
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="custom" name="custom">
+          Custom keywords or URLs:
+        </label>
+        <input type="text" id="custom-keywords" name="custom-keywords" placeholder="Enter keywords or URLs...">
+      </li>
+    </ul>
+    <div class="switch">
+        <label>
+          Off
+          <input type="checkbox" id="switch" name="switch">
+          <span class="slider"></span>
+          On
+        </label>
+    </div>
+    <button id="save-btn">Save</button>
+    <script src="./popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* Style the body and heading */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  #logo {
+    margin-right: 10px;
+    width: 15%;
+  }
+
+  h3 {
+    
+  }
+  
+  /* Style the options list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Style the enable/disable switch */
+  .switch {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input[type="checkbox"] {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input[type="checkbox"]:checked + .slider {
+    background-color: #2196F3;
+  }
+  input[type="checkbox"]:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
